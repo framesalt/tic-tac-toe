@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="UTF-8">
+    <title>tict A ctoe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    
+<div id='main'>
+  <div class="container-fluid">
+
+  <div class="row">
+  
+    <div class="col-xs-8 col-xs-offset-1 col-md-6 col-md-offset-5">
+      
+      <div class="statusDiv">
+      
+        <h1 id="status"> Status: <span id="state"> / </span> <h1>
+        <h3 id="status"> Moves left: <span id="movenum">  </span> <h3>
+          
+      </div>
+    </div> <!-- col -->
+    
+      
+  </div>
+          
+  <div class="row">
+     
+     
+    <div class="col-xs-5 col-md-2 col-md-offset-4">
+    
+      <div class="checkPanel">
+      
+       <div class="checkbox">
+        <label><input type="checkbox" id="enableAI"> Enable AI </label>
+      </div>
+        <h4> Do check for: </h4>
+       <div class="checkbox">
+        <label><input class="features" type="checkbox" id="bestFirstMove" disabled> best first move </label>
+      </div>
+       <div class="checkbox">
+        <label><input class="features"  type="checkbox" id="winFeature" disabled>win</label>
+      </div>
+       <div class="checkbox">
+        <label><input class="features"  type="checkbox" id="preventLossFeature" disabled>prevent loss </label>
+      </div>
+       <div class="checkbox">
+        <label><input class="features"  type="checkbox" id="makeChanceFeature" disabled> make double chance </label>
+      </div>
+       <div class="checkbox">
+        <label><input class="features"  type="checkbox" id="blockChanceFeature" disabled> block double chance </label>
+      </div>
+        
+      </div>
+    </div>
+     
+     <div class="col-xs-7 col-md-2">
+       
+        <table id ="board">
+
+          <tr>
+            <td class="field"  id = "0 0" ></td>
+            <td class="field"  id = "0 1" ></td>
+            <td class="field"  id = "0 2" ></td>
+          </tr>
+          <tr>
+            <td class="field"  id = "1 0" ></td>
+            <td class="field"  id = "1 1" ></td>
+            <td class="field"  id = "1 2" ></td>
+          </tr>
+          <tr>
+            <td class="field"  id = "2 0" ></td>
+            <td class="field"  id = "2 1" ></td>
+            <td class="field"  id = "2 2" ></td>
+          </tr>
+
+        </table>
+        <h4 style="margin-left: 15px"> Previous board </h4>
+        <table id ="prevBoard">
+
+          <tr>
+            <td  id = "3 0" ></td>
+            <td   id = "3 1" ></td>
+            <td   id = "3 2" ></td>
+          </tr>
+          <tr>
+            <td   id = "4 0" ></td>
+            <td   id = "4 1" ></td>
+            <td   id = "4 2" ></td>
+          </tr>
+          <tr>
+            <td   id = "5 0" ></td>
+            <td   id = "5 1" ></td>
+            <td   id = "5 2" ></td>
+          </tr>
+
+        </table>
+      
+     </div>
+     
+  </div>
+
+       
+
+          
+</div>
+      </div>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
